@@ -1,0 +1,95 @@
+.header
+{
+    background-color: lightgreen;
+}
+.header-bar
+{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: lightblue;
+}
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:visited
+{
+    background-color: red;
+}
+
+li a:hover
+{
+    background-color: green;
+}
+.faculty-table 
+        {
+            margin-left: auto;
+            margin-right: auto;
+        }
+table,th,td
+        {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th
+        {
+            text-align: left;
+        }
+        td
+        {
+            padding: 5px;
+            text-align: left;
+        }
+.active 
+{
+    background-color: #621;
+}
+
+label 
+{
+    display: inline-block;
+    clear: left;
+    width: 250px;
+}
+
+input
+{
+    display: inline-block;
+}
+
+footer
+{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #434;
+}
+
+footer li 
+{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
