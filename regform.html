@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JAVA SCRIPT FORM VALIDATION</title>
+	
+	<style>
+            .header
+             {
+                background-color: lightblue;
+
+             }
+             ul 
+             {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+             }
+            li 
+            {
+                display: inline;
+                float: left;
+            }
+
+            a 
+            {
+                display: block;
+                padding: 8px;
+                background-color: #dddddd;
+            }
+        .footer 
+        {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        }
+        a:link 
+        {
+        color:red;
+        }
+        a:visited 
+        {
+        color: green;
+        }
+
+        a:hover 
+        {
+        color: hotpink;
+        }
+        a:active 
+        {
+        color: blue;
+        }
+    </style>
+</head>
+<body >
+	<div class="header">
+            <h1 class="main"><img src=https://vitap.ac.in/wp-content/uploads/2017/12/vitapnew.png width="125" height="80" alt="VIT AP Logo"><center>Vellore Institute of Technology AP University</center></h1>
+            <div class="header-bar">
+                <li><a href="home.html">Home |</a></li>
+                    <li><a href="department.html">Departments |</a></li>
+                    <li><a href="student.html">Students |</a></li>
+                    <li><a href="placement.html">Placements |</a></li>
+                    <li><a href="alumni.html">Alumni |</a></li>
+                    <li><a href="contact.html">Contact Us |</a></li>
+                    <li><a href="student-vtop-login.html">VTOP Student Login</a></li>
+                    <li><a href="regform.html">Registration form</a></li>
+            </div>
+        </div>
+        <br>
+        <div class="main-content">
+            <div class="container">
+                <h1><center>Registration Form</center></h1>
+            </div>
+        </div>
+        <div class="Registration-form">
+            <form name="form1" action="#" method="post" >
+            	    
+                    <label for="name">Name : </label>
+                    <input type="text" name="name" id="name-input"  autofocus required>
+                    <br>
+                    <label for="sex">Sex :</label>
+                    <input type="radio" id="male" name="gender" value="male">
+  					<label for="male">Male</label>
+  					<input type="radio" id="female" name="gender" value="female">
+  					<label for="female">Female</label>
+  					<input type="radio" id="other" name="gender" value="other">
+  					<label for="other">Other</label>
+  					<br>
+                    <label for="Cname">CollegeName: </label>
+                    <input type="text" name="Cname" id="Cname-input" autofocus required>
+                    <br>
+                    <label for="branch">Branch</label>
+                    <select name="branch" id="branch">
+                        <option value="cse">CSE</option>
+                        <option value="ece">ECE</option>
+                        <option value="mec">MEC</option>
+                    </select>
+                    <br>
+                    <label for="emailid">Email id: </label>
+                    <input type="text" name="emailid" id="emailid-input" required>
+                    <br>
+
+                    <label for="Mobilenumber">MobileNumber : </label>
+                    <input type="text" name="mobilenumber" required />
+                    <br>
+                    <input type="submit" name="submit" value="Submit" onclick="validateForm(document.form1)"/>
+                    
+                
+            </form>
+        </div>
+
+         <div class="footer">
+            <h1>VIT-AP University, Inavolu, Beside AP Secratariat, Near Vijayawada,Andhrapradesh</h1>
+        </div>
+<script src="validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student</title>
+        <script type="text/javascript">
+        function ValidateEmail(inputText)
+		{
+		var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@vitap.ac.in+)*$/;
+		if(inputText.value.match(mailformat))
+		{
+		alert("Valid email address!");
+		document.registrationform.email.focus();
+		return true;
+		}
+		else
+		{
+		alert("You have entered an invalid email address!");
+		document.registrationform.email.focus();
+		return false;
+		}
+		}
+         </script>
+
+        <style>
+            .header
+             {
+                background-color: lightblue;
+
+             }
+             ul 
+             {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+             }
+            li 
+            {
+                display: inline;
+                float: left;
+            }
+
+            a 
+            {
+                display: block;
+                padding: 8px;
+                background-color: #dddddd;
+            }
+        .footer 
+        {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        }
+        a:link 
+        {
+        color:red;
+        }
+        a:visited 
+        {
+        color: green;
+        }
+
+        a:hover 
+        {
+        color: hotpink;
+        }
+        a:active 
+        {
+        color: blue;
+        }
+    </style>
+    </head>
+    <body>
+        
+        <div class="header">
+            <h1 class="main"><img src=https://vitap.ac.in/wp-content/uploads/2017/12/vitapnew.png width="125" height="80" alt="VIT AP Logo"><center>Vellore Institute of Technology AP University</center></h1>
+            <div class="header-bar">
+                <li><a href="home.html">Home |</a></li>
+                    <li><a href="department.html">Departments |</a></li>
+                    <li><a href="student.html">Students |</a></li>
+                    <li><a href="placement.html">Placements |</a></li>
+                    <li><a href="alumni.html">Alumni |</a></li>
+                    <li><a href="contact.html">Contact Us |</a></li>
+                    <li><a href="student-vtop-login.html">VTOP Student Login</a></li>
+                    <li><a href="regform.html">Registration form</a></li>
+            </div>
+        </div>
+        <br>
+        <div class="main-content">
+            <div class="container">
+                <h1><center>Student details</center></h1>
+            </div>
+        </div>
+        <div class="detail-collection-form">
+            <form id="collection-form" name="registrationform" action="#" onsubmit="return ValidateEmail(document.registrationform.email)" method="post">
+                <fieldset>
+                    <legend>Student Details</legend>
+
+                    <label for="Fname">First Name : </label>
+                    <input type="text" name="fname" id="fname-input"  autofocus required>
+                    <br>
+                    <label for="Lname">Last Name : </label>
+                    <input type="text" name="lname" id="lname-input" autofocus required>
+                    <br>
+                    <label for="Sregis">Registration Number : </label>
+                    <input type="text" name="regisno" id="regisno-input" autofocus required>
+                    <br>
+                    <label for="Email">Student Email : </label>
+                    <input type="email" name="email" id="email-input" required>
+                    <br>
+
+                    <label for="year-of-study">Year of Study</label>
+                    <select name="batch" id="batch">
+                        <option value="senior">Senior</option>
+                        <option value="junior">Junior</option>
+                        <option value="sophomore">Sophomore</option>
+                        <option value="fresher">Fresher</option>
+                    </select>
+                    <br>
+
+                    <label for="contact-number">Contact Number : </label>
+                    <input type="text" name="Contact Number" id="contact-number" required>
+
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+        <div class="footer">
+            <h1>VIT-AP University, Inavolu, Beside AP Secratariat, Near Vijayawada,Andhrapradesh</h1>
+        </div>
+    </body>
+</html>

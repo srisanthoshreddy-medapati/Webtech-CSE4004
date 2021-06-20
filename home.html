@@ -1,113 +1,88 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="./style.css">
-	<title>VITAP-Application form</title>
-</head>
-<style type="text/css">
-    #submit-button
-    {
-       background-color: #264; 
-    }
-    label
-    {
-            margin-bottom: 1em;
-    }
-</style>
-<body>
-	<div class="header">
-	    <h1>
-	    	<img id="logo" src=https://vitap.ac.in/wp-content/uploads/2017/12/vitapnew.png width="125" height="80" alt="VIT AP Logo">
-	    	<center>Vellore Institute of Technology AP University</center>
-	    </h1>
-	</div>
-	<div class="header-bar">
-	   <ul>
-	        <li><a href="home.html">Home |</a></li>
-	        <li><a href="https://www.vitap.ac.in">VitAp |</a></li>
-	        <li><a href="about.html">About |</a></li>
-	   </ul>
-	</div>                
+	<!DOCTYPE html>
+	<html lang="en">
+	    <head>
+	        <meta charset="UTF-8">
+	        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	        <title>Home</title>
+	         <style>
+	         .header
+	         {
+	         	background-color: lightblue;
+
+	         }
+	         ul 
+	         {
+  				list-style-type: none;
+  				margin: 0;
+  				padding: 0;
+			 }
+	        li 
+	        {
+  				display: inline;
+  				float: left;
+			}
+
+			a 
+			{
+  				display: block;
+  				padding: 8px;
+  				background-color: #dddddd;
+			}
+	        .footer 
+	        { 
+	        	position: fixed;
+	        	left: 0;
+	        	bottom: 0;
+	        	width: 100%;
+	        	text-align: center;
+	        }
+	        a:link 
+	        {
+	        color: red;
+	        }
+			a:visited 
+			{
+			  color: green;
+			}
+
+			a:hover 
+			{
+	  		 color: hotpink;
+			}
+
+			a:active 
+			{
+	 		 color: blue;
+			}
 
 
-    <div class="heading">
-	<h2>Enter the details for applying</h2>
-    </div>
-	<div class="VITAP-Application">
-            <form id="data">
-                <fieldset>
-                    <legend>Student Details</legend>
-
-                    <label for="Fname">First Name : </label>
-                    <input type="text" name="fname" id="fname-input" autofocus required>
-                    <br>
-                    <label for="Lname">Last Name : </label>
-                    <input type="text" name="lname" id="lname-input" autofocus required>
-                    <br>
-                    <label for="Dob">Date of birth : </label>
-                    <input type="text" name="dob" id="dob-input" autofocus required>
-                    <br>
-                    <label for="rnumber">Registration Number : </label>
-                    <input type="text" name="regisno" id="regisno-input" autofocus required>
-                    <br>
-                    <label for="Email">University email : </label>
-                    <input type="email" name="universityemail" id="universityemail-input" required>
-                    <br>
-                    <label for="year-of-study">Year of Study</label>
-                    <select name="batch" id="batch">
-                        <option value="senior">Senior</option>
-                        <option value="junior">Junior</option>
-                        <option value="sophomore">Sophomore</option>
-                        <option value="fresher">Fresher</option>
-                    </select>
-                    <br>
-                    <input id="submit-button" type="submit" value="Submit">
-                </fieldset>
-            </form>
-        </div>
-        <div class="main-content" style="overflow-x: auto;">
-        <table class="faculty-table">
-            <tr>
-                <th>Name</th>
-                <th>Department</th>
-                <th>Designation</th>
-                <th>Photo</th>
-                <th>Area of Specialization</th>
-                <th>Mail ID</th>
-            </tr>
-            <tr>
-                <td>Dr. S. Hari Seetha</td>
-                <td>SCOPE</td>
-                <td>Professor & Dean</td>
-                <td><img src="https://vitap.ac.in/wp-content/uploads/2019/06/Dr.-HARI-SEETHA.jpg" width="50" height="60"alt="Dean"></td>
-                <td>Large Data Classification, Data Mining, Data Analytics</td>
-                <td><a href="mailto:">Dr. S. Hari Seetha</a></td>
-            </tr>
-            <tr>
-                <td>Dr. Ch. Pradeep Reddy</td>
-                <td>SCOPE</td>
-                <td>Professor</td>
-                <td><img src="https://vitap.ac.in/wp-content/uploads/2019/06/Dr.-PRADEEP-REDDY.jpg" width="50" height="60" alt="Professor"></td>
-                <td>Wireless Networks, Cloud Computing, IOT, Open Source Technologies</td>
-                <td><a href="mailto:">Dr. Ch. Pradeep Reddy</a></td>
-            </tr>
-            <tr>
-                <td>Dr.Soubhagya Shankar</td>
-                <td>SCOPE</td>
-                <td>Professor</td>
-                <td><img src="https://vitap.ac.in/wp-content/uploads/2019/06/Dr.-B.-SOUBHAGYA-SANKAR.jpg" width="50" height="60" alt="Professor"></td>
-                <td>Biometrics, Hyperspectral Image Analysis, Software Engineering</td>
-                <td><a href="mailto:">Dr.Soubhagya Shankar</a></td>
-            </tr>
-            <caption><h1>Faculty Profile</h1></caption>
-        </table>
-        </div>
-
-        <footer>
-            <li class="active">M.Sri Santhosh Reddy</li>
-            <li>19BCN7091</li>
-        </footer>
-
-
-</body>
-</html>
+	    </style>
+	    </head>
+	    <body>
+	       
+	        <div class="header">
+	            <h1><img src=https://vitap.ac.in/wp-content/uploads/2017/12/vitapnew.png width="125" height="80" alt="VIT AP Logo"><center>Vellore Institute of Technology AP University</center></h1>
+	            <div class="header-bar">
+	            	<ul>
+	                <li><a href="home.html">Home |</a></li>
+	                <li><a href="department.html">Departments |</a></li>
+	                <li><a href="student.html">Students |</a></li>
+	                <li><a href="placement.html">Placements |</a></li>
+	                <li><a href="alumni.html">Alumni |</a></li>
+	                <li><a href="contact.html">Contact Us |</a></li>
+	                <li><a href="student-vtop-login.html">VTOP Student Login</a></li>
+	                </ul>
+	            </div>
+	        </div>
+	        <div class="main-content">
+	        	<br>
+	        	<br>
+	        	<br>
+	            <p>VIT-AP University is a private university located in Amaravati, the capital of Andhra Pradesh, India. It is the first university located in the capital region. With a history of 32 years of innovaion in educational and research domains. VIT has been a forerunner in delivering quality education. Consistently ranked among the top education institutes in the country, the VIT group of institutions have had a proud tradition of pursuing knowledge and excellence. In keeping with the this tradition, the leadership at VIT-AP resonates a dynamic blend of academic initiative and industry partnership with a vision of creating one of hte finest academic destination in the world.</p>
+	        </div>
+	        <div class="footer">
+	            <h1>VIT-AP University, Inavolu, Beside AP Secratariat, Pin Code : 522511</h1>
+	        </div>
+	    </body>
+	</html>
